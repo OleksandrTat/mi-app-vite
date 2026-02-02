@@ -143,6 +143,146 @@ code {
   font-family: 'Courier New', monospace;
 }
 
+/* Estilos para la sección del Worker */
+.worker-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 10px;
+  border: 2px solid #667eea;
+}
+
+.worker-section h2 {
+  margin-top: 0;
+  color: #667eea;
+}
+
+.worker-section ul {
+  text-align: left;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding-left: 2rem;
+}
+
+.worker-section li {
+  margin: 0.5rem 0;
+}
+
+.worker-button {
+  margin: 2rem 0;
+  font-size: 1.2em;
+  padding: 1em 2em;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.worker-button:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.5);
+}
+
+.worker-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-box {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #ff4444;
+  color: white;
+  border-radius: 8px;
+}
+
+.api-result {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.api-result h3 {
+  margin-top: 0;
+  color: #667eea;
+  text-align: center;
+}
+
+.user-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.user-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #667eea;
+}
+
+.user-card p {
+  margin: 0.5rem 0;
+}
+
+.worker-info {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.worker-info h4 {
+  margin-top: 0;
+  color: #667eea;
+}
+
+.worker-info p {
+  margin: 0.5rem 0;
+}
+
+.full-response {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.full-response summary {
+  font-weight: bold;
+  color: #667eea;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.full-response summary:hover {
+  background-color: #2a2a2a;
+}
+
+.full-response pre {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #0a0a0a;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .user-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
